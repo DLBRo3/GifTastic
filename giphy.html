@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gif Tastic NBA Players</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Bootstrap Grid -->
+    <div class="container">
+    
+    <!-- Jumbotron with Gif Title -->
+    <div class="jumbotron">
+        <h1 class="text-center"><strong>Welcome to GifTastic Ballers!</strong></h1>
+        <h5 class="text-center" id="instructions">Press the buttons to see the best players in the NBA</h5>
+    </div> <!-- End Jumbotron -->
+      
+     <!-- Row containing the player buttons -->
+     <div class="row" id="nbaButtons">
+    <!-- Buttons with basketball players -->
+    <button class="btn btn-danger athlete" data-name="Lebron James" style="margin: 5px;">Lebron James</button>
+    <button class="btn btn-danger athlete" data-name="Dwayne Wade" style="margin: 5px;">Dwayne Wade</button>
+    <button class="btn btn-danger athlete" data-name="Kobe Bryant" style="margin: 5px;">Kobe Bryant</button>
+    <button class="btn btn-danger athlete" data-name="Michael Jordan" style="margin: 5px;">Michael Jordan</button>
+    <button class="btn btn-danger athlete" data-name="Tim Duncan" style="margin: 5px;">Tim Duncan</button>
+    <button class="btn btn-danger athlete" data-name="Steve Nash" style="margin: 5px;">Steve Nash</button>
+    <button class="btn btn-danger athlete" data-name="Russell Westbrook" style="margin: 5px;">Russell Westbrook</button>
+    <button class="btn btn-danger athlete" data-name="James Harden" style="margin: 5px;">James Harden</button>
+    <button class="btn btn-danger athlete" data-name="Paul George" style="margin: 5px;">Paul George</button>
+    <button class="btn btn-danger athlete" data-name="Carmelo Anthony" style="margin: 5px;">Carmelo Anthony</button>
+    <button class="btn btn-danger athlete" data-name="Anthony Davis" style="margin: 5px;">Anthony Davis</button>
+    <button class="btn btn-danger athlete" data-name="Chris Paul" style="margin: 5px;">Chris Paul</button>
+    <button class="btn btn-danger athlete" data-name="Kawhi Leonard" style="margin: 5px;">Kawhi Leonard</button>
+    <button class="btn btn-danger athlete" data-name="Stephen Curry" style="margin: 5px;">Stephen Curry</button>
+    <button class="btn btn-danger athlete" data-name="Klay Thompson" style="margin: 5px;">Klay Thompson</button>
+    <button class="btn btn-danger athlete" data-name="Kevin Durant" style="margin: 5px;">Kevin Durant</button>
+    <button class="btn btn-danger athlete" data-name="Kyrie Irving" style="margin: 5px;">Kyrie Irving</button>
+    <button class="btn btn-danger athlete" data-name="Draymond Green" style="margin: 5px;">Draymond Green</button>
+    
+    </div> <!-- End row with player buttons -->
+
+
+
+    <!-- Left panel containing the Gifs -->
+    <div class="col-lg-10" id="gifPanel">
+        </div> <!-- End left panel containing the Gifs  -->
+  
+    <!-- Right panel containing the user form -->
+        <div style="float:right; margin-top:90px" class="col-lg-2 formPanel"> 
+          <form id="player-form">
+            <label for="player-input" class="inputLabel">Add an NBA Player</label>
+            <input type="text" id="player-input"><br>
+  
+            <!-- Button triggers a new animal to be added -->
+            <input id="add-player" name="button" class="btn btn-primary" type="submit" value="Submit" style="margin-top:5px">
+          </form>
+        </div> <!-- End right panel containing the user form -->
+  
+      </div> <!-- End row with Gifs and user form -->
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Local javascript file -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
