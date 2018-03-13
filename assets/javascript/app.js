@@ -28,15 +28,16 @@ function renderButtons() {
 // Event Handlers
 
 // Event handler for user to add additional players to the array
-$("add-player").on("click", function(event) {
+$("#add-player").on("click", function(event) {
     event.preventDefault();
 
     // Get input from the text
     var player = $("#player-input").val().trim();
 
     // The player from the text is added to playersArr array
-    $("#player-input").val(" ").trim();
     playersArr.push(player);
+    $("#player-input").val("");
+    
 
     // Run player buttons
     renderButtons();
@@ -66,7 +67,7 @@ function fetchPlayerGifs() {
             var newDiv = $("<div>");
             newDiv.addClass("playerGif");
 
-            var newRating = $("<h3>").html("Rating: " + dataArray[i].rating);
+            var newRating = $("<h4>").html("Rating: " + dataArray[i].rating);
             newDiv.append(newRating);
 
             var newImg = $("<img>");
